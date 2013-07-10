@@ -3,7 +3,7 @@ export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
 
-alias bashreload=". .bash_profile"
+alias bashreload=". ~/.bash_profile"
 alias vi="vim"
 alias ls="ls -laGF"
 
@@ -13,6 +13,8 @@ alias flushdns="dscacheutil -flushcache"
 
 alias feedly="open http://cloud.feedly.com/#my"
 alias vninja="open http://vNinja.net/wordpress/wp-admin/"
+
+alias wakelaban="~/git/scripts/wakelaban.py"
 
 # Hacks / Customizations
 alias showdotfiles="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
