@@ -1,0 +1,37 @@
+bind e:cmd hint ASDFGHJKLQWERTYUIOPCVBN # use whatever keys you want
+bind g:cmd grid padding:5 0:6,2 1:8,3
+
+# Abstract positions
+alias full move screenOriginX;screenOriginY screenSizeX;screenSizeY
+alias lefthalf move screenOriginX;screenOriginY screenSizeX/2;screenSizeY
+alias righthalf move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY
+alias topleft corner top-left resize:screenSizeX/2;screenSizeY/2
+alias topright corner top-right resize:screenSizeX/2;screenSizeY/2
+alias bottomleft corner bottom-left resize:screenSizeX/2;screenSizeY/2
+alias bottomright corner bottom-right resize:screenSizeX/2;screenSizeY/2
+
+# Location Bindings
+bind 1:ctrl ${bottomleft}
+bind 2:ctrl push bottom bar-resize:screenSizeY/2
+bind 3:ctrl  ${bottomright}
+bind 4:ctrl  ${lefthalf}
+bind 5:ctrl ${full}
+bind 6:ctrl ${righthalf}
+bind 7:ctrl ${topleft}
+bind 8:ctrl push top bar-resize:screenSizeY/2
+bind 9:ctrl ${topright}
+
+# Slate
+bind 1:ctrl,cmd relaunch
+#bind tab:cmd switch
+
+bind 2:alt,ctrl throw 1 resize
+bind 1:alt,ctrl throw 0 resize
+
+# Lock Desktop -- Does not work
+# '/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
+#bind l:ctrl shell lock 
+
+#Run Applications
+bind esc:cmd shell /Applications/Utilities/Terminal.app/Contents/MacOS/Terminal  
+
