@@ -1,7 +1,8 @@
-source ~/.bashrc
+#source ~/.bashrc
+export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
 export CLICOLOR=1
-export LSCOLORS=ExFxCxDxBxegedabagacad
-
+export LSCOLORS=ExFxBxDxCxegedabagacad
+alias ls='ls -GFh'
 
 alias bashreload=". ~/.bash_profile"
 alias vi="vim"
@@ -12,8 +13,7 @@ alias fopen="open -a Finder ./"
 
 alias httpd="python -m SimpleHTTPServer"
 alias publicip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias flushdns="dscacheutil -flushcache"
-
+alias flushdns="sudo killall -HUP mDNSResponder"
 alias feedly="open http://cloud.feedly.com/#my"
 alias vninja="open http://vNinja.net/wordpress/wp-admin/"
 
@@ -26,5 +26,3 @@ alias showdeskicons="defaults write com.apple.finder CreateDesktop -bool true &&
 alias hidedeskicons="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 
 #Functions
-
-
