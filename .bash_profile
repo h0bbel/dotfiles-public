@@ -18,6 +18,7 @@ alias feedly="open http://cloud.feedly.com/#my"
 alias vninja="open http://vNinja.net/wordpress/wp-admin/"
 
 alias wakelaban="~/Git/scripts/wakelaban.py"
+alias wakelou="~/Git/scripts/wakelou.py"
 
 # Hacks / Customizations
 alias showdotfiles="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
@@ -26,3 +27,4 @@ alias showdeskicons="defaults write com.apple.finder CreateDesktop -bool true &&
 alias hidedeskicons="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 
 
+source "`brew --prefix grc`/etc/grc.bashrc"
