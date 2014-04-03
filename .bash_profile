@@ -9,13 +9,13 @@ alias vi="vim"
 alias ls="ls -laGF"
 
 alias fopen="open -a Finder ./"
-
-
 alias httpd="python -m SimpleHTTPServer"
 alias publicip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias flushdns="sudo killall -HUP mDNSResponder"
 alias feedly="open http://cloud.feedly.com/#my"
 alias vninja="open http://vNinja.net/wordpress/wp-admin/"
+
+alias clock="while sleep 1;do tput sc;tput cup 0 $(($(tput cols)-29));date;tput rc;done &"
 
 alias wakelaban="~/Git/scripts/wakelaban.py"
 alias wakelou="~/Git/scripts/wakelou.py"

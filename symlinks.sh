@@ -12,5 +12,5 @@ cd ~
 
 
 ########## Create Symlinks
-ln dotfiles/.bash_profile .bash_profile
-ln dotfiles/.slate .slate
+ln -s dotfiles/.bash_profile .bash_profile
+ln -s dotfiles/.slate .slate
