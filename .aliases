@@ -46,3 +46,5 @@ alias hidedeskicons="defaults write com.apple.finder CreateDesktop -bool false &
 alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume 10'"
 
+# Get macOS Software Updates, and update Homebrew
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade;'

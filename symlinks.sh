@@ -6,6 +6,8 @@
 # https://github.com/michaeljsmalley/dotfiles/blob/master/makesymlinks.sh
 ############################
 
+# This is no good. Needs to be fixed.
+# add aliases etc
 
 ########## Go Home
 cd ~
@@ -13,4 +15,3 @@ cd ~
 
 ########## Create Symlinks
 ln -s dotfiles/.bash_profile .bash_profile
-ln -s dotfiles/.slate .slate
