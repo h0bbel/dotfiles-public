@@ -1,0 +1,10 @@
+#
+# .bash_prompt
+#
+# @author Christian Mohn
+#
+
+export PS1="\[\e[0;32m\]\]\[\] \[\e[1;32m\]\]\t \[\e[0;2m\]\]\w \[\e[0m\]\]\[$\] "
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacadalias ls='ls -GFh'
+export HISTTIMEFORMAT="%d/%m/%y %T " # Date / Time display for 'history''
