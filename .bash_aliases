@@ -1,8 +1,11 @@
 #
-# .aliases
+# .bash_aliases
 #
 # @author Christian Mohn
 #
+
+# Enable aliases to be sudo’ed
+alias sudo='sudo '
 
 alias bashreload=". ~/.bash_profile"
 alias vi="vim"
@@ -26,6 +29,7 @@ alias vninja="open http://vNinja.net/wordpress/wp-admin/"
 
 alias starttftpd="sudo launchctl load -F /System/Library/LaunchDaemons/tftp.plist && sudo launchctl start com.apple.tftpd && cd /private/tftpboot/"
 alias stoptftpd="sudo launchctl stop com.apple.tftpd && sudo launchctl unload -F /System/Library/LaunchDaemons/tftp.plist" 
+#!/usr/bin/env bash
 
 # SSH Connections
 alias sshplex="ssh administrator@192.168.5.69"
@@ -48,3 +52,6 @@ alias pumpitup="osascript -e 'set volume 10'"
 
 # Get macOS Software Updates, and update Homebrew
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade;'
+
+# Show active network interfaces
+alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'"

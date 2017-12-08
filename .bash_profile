@@ -5,7 +5,7 @@
 #
 
 # Prompt moved to .bash_prompt
-# aliases moved to .aliases
+# aliases moved to .bash_aliases
 
 
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
@@ -38,6 +38,16 @@ fi
 
 export PATH=~/usr/bin:$PATH
 
-. ~/.aliases 		# Load aliases
-. ~/.bash_prompt 	# Load bash_prompt
+# Include alias file (if present) containing aliases for ssh, etc.
+if [ -f ~/.bash_aliases ]
+then
+  source ~/.bash_aliases
+fi
+
+# Include bash_prompt file (if present) containing my snazzy prompt.
+if [ -f ~/.bash_prompt ]
+then
+  source ~/.bash_prompt
+fi
+
 
