@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Test to see if this actually runs
+
+touch ~/.macos.run
