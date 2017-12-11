@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 #
 # .bash_aliases
 #
@@ -29,7 +30,6 @@ alias vninja="open http://vNinja.net/wordpress/wp-admin/"
 
 alias starttftpd="sudo launchctl load -F /System/Library/LaunchDaemons/tftp.plist && sudo launchctl start com.apple.tftpd && cd /private/tftpboot/"
 alias stoptftpd="sudo launchctl stop com.apple.tftpd && sudo launchctl unload -F /System/Library/LaunchDaemons/tftp.plist" 
-#!/usr/bin/env bash
 
 # SSH Connections
 alias sshplex="ssh administrator@192.168.5.69"
