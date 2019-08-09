@@ -1,0 +1,73 @@
+{
+	// Place your snippets for markdown here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+
+	"Jumbotron": {
+		"prefix": "h-jumbo",
+		"body": [
+			"{{% jumbotron \"${1:text}\"%}}"
+		],
+		"description": "Insert Bootstrap Jumbotron"
+	}
+
+	, "Information text": {
+		"prefix": "h-info",
+		"body": [
+			"{{% info \"${1:text}\"%}}"
+		],
+		"description": "Insert Bootstrap Warning"
+	}
+
+	, "Warning text": {
+		"prefix": "h-warning",
+		"body": [
+			"{{% warning \"${1:text}\"%}}"
+		],
+		"description": "Insert Bootstrap Warning"
+	}
+	
+	, "Muted text": {
+		"prefix": "h-muted",
+		"body": [
+			"{{% muted \"${1:text}\"%}}"
+		],
+		"description": "Insert Bootstrap Muted"
+	}
+
+	, "Primary text": {
+		"prefix": "h-primary",
+		"body": [
+			"{{% primary \"${1:text}\"%}}"
+		],
+		"description": "Insert Bootstrap Primary"
+	}
+
+	, "Danger text": {
+		"prefix": "h-danger",
+		"body": [
+			"{{% danger \"${1:text}\"%}}"
+		],
+		"description": "Insert Bootstrap Danger"
+	}
+
+	, "Suvvess text": {
+		"prefix": "h-success",
+		"body": [
+			"{{% success \"${1:text}\"%}}"
+		],
+		"description": "Insert Bootstrap Success"
+	}
+}
+
